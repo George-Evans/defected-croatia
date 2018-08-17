@@ -884,7 +884,7 @@ HOME PAGE
 }
 
 #mob-tickets {
-	width: 144px;
+	width: 230px;
 	height: 30px;
 	display: none;
 	position: fixed;
@@ -1841,7 +1841,7 @@ input.button.sign {
 	color: #000;
 	width: 301px;
 	font-family: 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial;
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 30px;
 	padding: 10px 15px;
 	border: 0;
