@@ -20,7 +20,7 @@
         videoId: 'ntvrFgMc3ts',
         mute: true,
         repeat: true,
-        width: ($(window).width()*1.2),
+        width: ($(window).width(),
         wrapperZIndex: 99,
         playButtonClass: 'tubular-play',
         pauseButtonClass: 'tubular-pause',
