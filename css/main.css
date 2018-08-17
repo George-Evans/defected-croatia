@@ -180,7 +180,7 @@ LAYERS
 
 .container1 { 
 	width: 100%;
-	height: 100%;
+	height: 70%;
 	margin: 0 auto;
 	padding: 0 0;
 	background: none;
@@ -1432,15 +1432,19 @@ YouTube SIZE FIX
     overflow: hidden;
 	}
 	 
-	.video-container iframe,
-	.video-container object,
-	.video-container embed {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 120%;
-		height: 120%;
-	}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#tubular-container {
+	top:-15%;
+}
 
 
 /*------------------------------
