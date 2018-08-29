@@ -34,6 +34,9 @@ a:hover {
 #header {
 	height: 100vh;
 	position: relative;
+	background: url(../img/dennis_mob.jpg);
+	background-size: cover; 
+	z-index: 2;
 }
 
 #thankyou {
@@ -185,8 +188,35 @@ a:hover {
     box-shadow: 0 0 0 0.2rem rgba(245,196,35,.5);
 }
 
+
+.fixed-btn {
+	z-index: 4;
+	position: relative;
+	float: right;
+	left: -50%;
+	-ms-transform: translateX(50%) translateY(0);
+  	-webkit-transform: translate(50%,0);
+	transform: translate(50%, 0);
+
+}
+
+.btn-round {
+	border-radius: 50%;
+	height: 120px;
+	width: 120px;
+	text-align: center;
+	padding: 35px 0;
+	font-size: 1em;
+	line-height: 1em;
+	margin-top: 20px;
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+	#header {
+		background: url(../img/dennis_tab.jpg); 
+		background-size: cover;
+	}
 
 }
 
@@ -197,21 +227,38 @@ a:hover {
 	height: 70vh;
 }
 
-.hero-logo {
-	width: 60%;
-}
-
 .md-show {
 	display: inherit;
 
 }
 
+.md-hide {
+	display: none;
+}
+
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+
+	.lg-show {
+		display: inherit;
+	}
+
+	.lg-hide {
+		display: none;
+	}
 
 	.container {
 		max-width: 860px;
 		padding: 0;
+	}
+
+	#header {
+		background-image: none;
+		background-color: rgba(0,0,0,0.2);
+	}
+
+	.hero-logo {
+		width: 60%;
 	}
 
 }
@@ -219,6 +266,23 @@ a:hover {
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+
+	.fixed-btn {
+		position: fixed;
+		left: 5vw;
+		top: 60vh;
+		-ms-transform: translateX(0) translateY(0);
+  		-webkit-transform: translate(0,0);
+		transform: translate(0, 0);
+	}
+
+	.btn-round {
+		height: 150px;
+		width: 150px;
+		padding: 45px 0;
+		font-size: 1.2em;
+		margin-top: 0;
+	}
 
 	
 
