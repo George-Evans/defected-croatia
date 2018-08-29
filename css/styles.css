@@ -1,0 +1,230 @@
+body {
+	background-color: #000;
+	color: #fff;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #fff;
+}
+
+a:hover {
+	color: #fff;
+	text-decoration: underline;
+}	
+
+.container {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.sm-show,
+.md-show,
+.lg-show,
+.xl-show {
+	display: none;
+}
+
+/*Sections*/
+
+.section {
+	padding: 80px 0;
+}
+
+#header {
+	height: 100vh;
+	position: relative;
+}
+
+#thankyou {
+	background-color: #E84242;
+}
+
+#signup {
+	background-color: #1D2452;
+}
+
+#footer {
+	position: relative;
+	background-color: #000;
+	padding: 24px;
+	text-align: center;
+	font-size: 0.65em;
+}
+
+
+/*Header*/
+
+#wrapper {
+	z-index: -1;
+}
+
+.hero-logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
+	width: 80%;
+}
+
+.header-btn {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	-ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
+}
+
+
+
+/*Mailchimp Form*/
+
+#mc_embed_signup {
+	width: 100%;
+	max-width: 560px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#mc_embed_signup input {
+	width: 100%;
+	margin-bottom: 5px;
+	padding: 10px;
+	border: 0;
+	border-radius: 0;
+} 
+
+.indicates-required {
+	font-size: 0.65em;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  text-align: center;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  text-align: center;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  text-align: center;
+}
+:-moz-placeholder { /* Firefox 18- */
+  text-align: center;
+}
+
+/*Footer*/
+
+#footer .col-md-4 {
+	position: relative;
+	padding: 0;
+}
+
+.footer-logo {
+	width: 100px;
+	display: block;
+	margin: 0 auto 8px;
+}
+
+#defected-link {
+	position: absolute;
+	bottom: 0px;
+	left: 24px;
+	font-family: 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial;
+	font-size: 1.5em;
+}
+
+#socials {
+	position: absolute;
+	bottom: 0px;
+	right: 24px;
+}
+
+.icons {
+	list-style: none;
+	margin-bottom: 0;
+}
+
+.icons li {
+	display: inline;
+	margin-left: 4px;
+}
+
+.icons img {
+	height: 20px;
+	width: auto;
+}
+
+
+
+/*UI Components*/
+
+.btn {
+	font-family: 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial;
+	font-size: 1.2em;
+	padding: 10px 30px;
+	border: 0;
+	border-radius: 0;
+}
+
+.btn-primary {
+	color: rgba(0,0,0,.87);
+	background-color: #FFE843;
+}
+
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-primary.dropdown-toggle {
+	color: #000;
+	background-color: #F5C423;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(245,196,35,.5);
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+#header {
+	height: 70vh;
+}
+
+.hero-logo {
+	width: 60%;
+}
+
+.md-show {
+	display: inherit;
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+	.container {
+		max-width: 860px;
+		padding: 0;
+	}
+
+}
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+	
+
+}
+
+
+
+
+
