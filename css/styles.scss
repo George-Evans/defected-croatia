@@ -1,0 +1,480 @@
+/*Color Palette*/
+
+/*Internals*/
+$x-purple-1000: #1D2452;
+$x-purple-900: #552470;
+$x-purple-700: #7F318B;
+$x-purple-500: #9D3D9A;
+
+$x-red-900: #C40027;
+$x-red-800: #D30734;
+$x-red-600: #F22442;
+$x-red-400: #FA495C;
+
+$x-orange-900: #FF6E00;
+$x-orange-700: #FF9F00;
+$x-orange-500: #FFC005;
+
+$x-yellow-600: #FFD800;
+$x-yellow-400: #FDEC3F;
+$x-yellow-200: #FFF595;
+
+/*Home*/
+$home-1: $x-purple-900;
+$home-2: $x-purple-700;
+$home-3: $x-purple-500;
+
+/*Programme*/
+$prog-1: $x-red-600;
+$prog-2: $x-red-900;
+$prog-3: $x-red-400;
+
+/*Location*/
+$loc-1: $x-orange-900;
+$loc-2: $x-orange-900;
+
+/*Booking*/
+$book-1: $x-yellow-600;
+$book-2: $x-yellow-400;
+$book-3: $x-yellow-200;
+$book-txt: $x-purple-1000;
+
+
+/*Typography*/
+
+@font-face {
+    font-family: 'ag-defectedbrand-bold';
+    src: url('https://defected.com/static/font/avantgardedefectedbold-webfont.eot?6a32a2dbe2d2');
+    src: url('https://defected.com/static/font/avantgardedefectedbold-webfont?#iefix') format('embedded-opentype'),
+         url('https://defected.com/static/font/avantgardedefectedbold-webfont.woff?6a32a2dbe2d2') format('woff'),
+         url('https://defected.com/static/font/avantgardedefectedbold-webfont.ttf?6a32a2dbe2d2') format('truetype'),
+         url('https://defected.com/static/font/avantgardedefectedbold-webfont.svg?6a32a2dbe2d2#avant_garde_defected_brand_Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*UI Components*/
+
+h1,
+h2,
+h3 {
+	font-family: 'ag-defectedbrand-bold', 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial;
+	text-transform: uppercase;
+	line-height: 0.8em;
+	font-kerning: normal;
+}
+
+a {
+	font-family: 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 9em;
+	line-height: 0.8em;
+}
+
+h2 {
+	font-size: 6em;
+	margin-bottom: 0.3em;
+}
+
+h3 {
+	font-size: 3em;
+	margin-bottom: 0.4em;
+}
+
+p {
+	margin-bottom: 5rem;
+}
+
+.headline {
+	padding-top: 30vh;
+	padding-bottom: 30vh;
+}
+
+.btn {
+	font-family: 'ag-defectedbrand-bold', 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial;
+	font-size: 1.2em;
+	padding: 10px 30px;
+	border: 0;
+	border-radius: 0;
+}
+
+.btn-primary {
+	color: rgba(0,0,0,.87);
+	background-color: #FFE843;
+}
+
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-primary.dropdown-toggle {
+	color: #000;
+	background-color: #F5C423;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(245,196,35,.5);
+}
+
+
+.fixed-btn {
+	z-index: 4;
+	position: relative;
+	float: right;
+	left: -50%;
+	-ms-transform: translateX(50%) translateY(0);
+  	-webkit-transform: translate(50%,0);
+	transform: translate(50%, 0);
+}
+
+.btn-round {
+	border-radius: 50%;
+	height: 120px;
+	width: 120px;
+	text-align: center;
+	padding: 35px 0;
+	font-size: 1em;
+	line-height: 1em;
+	margin-top: 20px;
+}
+
+/*Section Slanting*/
+
+.section {
+	padding: 80px 0 160px;
+	margin-top: -80px;
+}
+
+.container {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#header {
+	z-index: 0;
+	background-size: cover;
+	height: auto;
+}
+
+.section:nth-child(2) {
+	transform: skewY(-4deg);
+	z-index: 1;
+
+	.container {
+		transform: skewY(4deg);
+	}
+}
+
+.section:nth-child(3) {
+	transform: skewY(2deg);
+	z-index: 2;
+
+	.container {
+		transform: skewY(-2deg);
+	}
+}
+ 
+
+.section:nth-child(4) {
+	transform: skewY(-1deg);
+	z-index: 3;
+
+	.container {
+		transform: skewY(1deg);
+	}
+}
+
+/*Page & Section Colours*/
+
+#home {
+
+	#header {
+		height: 100vh;
+		position: relative;
+		background: url(../img/dennis_mob.jpg);
+	}
+
+	#thankyou {
+		background-color: #E84242;
+	}
+
+	#signup {
+		background-color: #1D2452;
+	}
+
+}
+
+#booking {
+	color: $book-txt;
+
+	#header {
+		background-image: url(../img/bookingheader.jpg);
+	}
+
+	#tickets {
+		background-color: $book-1;
+	}
+
+	#accommodation {
+		background-color: $book-2;
+	}
+
+	#travel {
+		background-color: $book-3;
+	}
+
+	h3.step {
+		color: $x-red-600;
+	}
+
+}
+
+#programme {
+
+	#lineup {
+		background-color: $prog-1;
+	}
+
+	#stages {
+		background-color: $prog-2;
+	}
+
+}
+
+
+/*Navigation*/
+
+.navbar {
+	padding: 2.5rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-right: 0;
+	padding-left: 2rem;
+	font-size: 0.9em;
+}
+
+.nav-item:nth-child(1) > .nav-link {
+	color: $x-yellow-600;
+}
+
+
+body {
+	background-color: #000;
+	color: #fff;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #fff;
+}
+
+a:hover {
+	color: #fff;
+	text-decoration: underline;
+}	
+
+
+
+.sm-show,
+.md-show,
+.lg-show,
+.xl-show {
+	display: none;
+}
+
+/*Sections*/
+
+
+
+
+
+#footer {
+	position: relative;
+	background-color: #000;
+	padding: 24px;
+	text-align: center;
+	font-size: 0.65em;
+}
+
+
+/*Header*/
+
+#wrapper {
+	z-index: -1;
+}
+
+.hero-logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
+	width: 90%;
+}
+
+.header-btn {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	-ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
+}
+
+
+
+/*Mailchimp Form*/
+
+#mc_embed_signup {
+	width: 100%;
+	max-width: 560px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#mc_embed_signup input {
+	width: 100%;
+	margin-bottom: 5px;
+	padding: 10px;
+	border: 0;
+	border-radius: 0;
+	text-align: center;
+} 
+
+.indicates-required {
+	font-size: 0.65em;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  text-align: center;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  text-align: center;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  text-align: center;
+}
+:-moz-placeholder { /* Firefox 18- */
+  text-align: center;
+}
+
+/*Footer*/
+
+#footer .col-md-4 {
+	position: relative;
+	padding: 0;
+}
+
+.footer-logo {
+	width: 100px;
+	display: block;
+	margin: 0 auto 8px;
+}
+
+#defected-link {
+	position: absolute;
+	bottom: 0px;
+	left: 24px;
+	font-family: 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial;
+	font-size: 1.5em;
+}
+
+#socials {
+	position: absolute;
+	bottom: 0px;
+	right: 24px;
+}
+
+.icons {
+	list-style: none;
+	margin-bottom: 0;
+}
+
+.icons li {
+	display: inline;
+	margin-left: 4px;
+}
+
+.icons img {
+	height: 20px;
+	width: auto;
+}
+
+
+
+
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+	#header {
+		background: url(../img/dennis_tab.jpg); 
+		background-size: cover;
+	}
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+	.md-show {
+		display: inherit;
+	}
+
+	.md-hide {
+		display: none;
+	}
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+	.lg-show {
+		display: inherit;
+	}
+
+	.lg-hide {
+		display: none;
+	}
+
+	.container {
+		max-width: 860px;
+		padding: 0;
+	}
+
+	.hero-logo {
+		width: 70%;
+	}
+
+}
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+	.hero-logo {
+		width: 50%;
+	}
+
+	.fixed-btn {
+		position: fixed;
+		left: 5vw;
+		top: 60vh;
+		-ms-transform: translateX(0) translateY(0);
+  		-webkit-transform: translate(0,0);
+		transform: translate(0, 0);
+	}
+
+	.btn-round {
+		height: 150px;
+		width: 150px;
+		padding: 45px 0;
+		font-size: 1.2em;
+		margin-top: 0;
+	}
+
+}
