@@ -250,6 +250,31 @@ p {
 	padding: 2.5rem;
 }
 
+.navbar-brand {
+	line-height: 1.25rem;
+
+	img {
+		height: 2rem;
+		width: auto;
+	}
+
+	> div {
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+
+#date-countdown {
+	font-size: 0.5em;
+	line-height: 1em;
+	margin-top: 1px;
+
+	.countdown {
+		font-size: 1.4em;
+	}
+}
+
 .navbar-expand-lg .navbar-nav .nav-link {
 	padding-right: 0;
 	padding-left: 2rem;
@@ -259,6 +284,8 @@ p {
 .nav-item:nth-child(1) > .nav-link {
 	color: $x-yellow-600;
 }
+
+
 
 
 body {
