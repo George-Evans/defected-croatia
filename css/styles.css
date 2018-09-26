@@ -12,50 +12,92 @@
   src: url("https://defected.com/static/font/avantgardedefectedbold-webfont?#iefix") format("embedded-opentype"), url("https://defected.com/static/font/avantgardedefectedbold-webfont.woff?6a32a2dbe2d2") format("woff"), url("https://defected.com/static/font/avantgardedefectedbold-webfont.ttf?6a32a2dbe2d2") format("truetype"), url("https://defected.com/static/font/avantgardedefectedbold-webfont.svg?6a32a2dbe2d2#avant_garde_defected_brand_Rg") format("svg");
   font-weight: normal;
   font-style: normal; }
-/*UI Components*/
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+.btn,
+.price {
+  text-transform: uppercase;
+  font-kerning: normal; }
+
 h1,
 h2 {
-  font-family: 'ag-defectedbrand-bold', 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial;
-  text-transform: uppercase;
-  font-kerning: normal;
-  margin-bottom: 0.2em; }
+  font-family: 'ag-defectedbrand-bold', 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial; }
+
+h3,
+h4,
+h5,
+a,
+.btn,
+.price {
+  font-family: 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial;
+  letter-spacing: -0.02em;
+  line-height: 1em; }
 
 h1 {
-  line-height: 0.8em; }
+  font-size: 8em;
+  line-height: 0.8em;
+  margin-bottom: 0.2em; }
+
+h2 {
+  font-size: 6em;
+  margin-bottom: 1em; }
+
+h3 {
+  font-size: 3em;
+  margin-bottom: 0.3em; }
+
+h4 {
+  font-size: 2.5em;
+  line-height: 1em; }
+
+h5 {
+  font-size: 2em;
+  line-height: 1em;
+  margin-top: 1.5rem; }
 
 h2,
 h3 {
   line-height: 0.9em; }
 
-h3,
-a {
-  font-family: 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial;
-  text-transform: uppercase;
-  letter-spacing: -0.02em; }
-
-h1 {
-  font-size: 8em; }
-
-h2 {
-  font-size: 6em; }
-
-h3 {
-  font-size: 2.2em; }
+/*UI Components*/
+a.see-more {
+  text-decoration: underline;
+  margin-right: 0.6rem; }
 
 p {
+  margin-bottom: 1.2rem; }
+
+.chunk {
   margin-bottom: 5rem; }
+
+.chunk h2 {
+  margin-bottom: 0.1em; }
 
 .headline {
   padding-top: 30vh;
   padding-bottom: 30vh; }
 
 .btn {
-  font-family: 'ag-defectedbrand-bold', 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial;
-  font-size: 1.2em;
-  padding: 10px 30px;
-  border: 0;
-  border-radius: 0; }
+  font-size: 1.2rem;
+  padding: 1rem 5rem;
+  border-radius: 0;
+  display: block;
+  width: min-content;
+  margin-bottom: 1.2rem; }
 
+/*@mixin btn-color($color-1, $color-2) {
+	color: $color-1;
+	background-color: transparent;
+	border: 1px solid $color-1;
+	&:hover {
+		color: $color-2;
+		background-color: $color-1;
+	}
+}*/
 .btn-primary {
   color: rgba(0, 0, 0, 0.87);
   background-color: #FFE843; }
@@ -125,16 +167,20 @@ p {
 .navbar-bg {
   position: fixed;
   height: 20px;
-  top: -20px;
+  top: -21px;
   left: 0;
   width: 100%;
   z-index: 1020;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out;
+  border-bottom: 1px solid #fff; }
 
 /*Page & Section Colours*/
+.section img {
+  opacity: 0.9; }
+
 #home #header {
   height: 100vh;
   position: relative;
@@ -144,38 +190,88 @@ p {
 #home #signup {
   background-color: #1D2452; }
 
+#booking .navbar-bg {
+  background-color: #07284F; }
 #booking #dfd-logo rect,
 #booking #croatia-2019-logo {
   fill: #80EDF4; }
 #booking .nav-item:nth-child(1) > .nav-link {
   color: #80EDF4; }
-#booking #header {
-  background-image: url(../img/bookingheader.jpg); }
-#booking #tickets {
+#booking .section:nth-child(2) {
   background-color: #52BCF7; }
-#booking #accommodation {
+  #booking .section:nth-child(2) .btn {
+    color: #07284F;
+    background-color: transparent;
+    border: 1px solid #07284F; }
+    #booking .section:nth-child(2) .btn:hover {
+      color: #52BCF7;
+      background-color: #07284F; }
+#booking .section:nth-child(3) {
   background-color: #2289FB; }
-#booking #travel,
-#booking .navbar-bg {
+  #booking .section:nth-child(3) .btn {
+    color: #07284F;
+    background-color: transparent;
+    border: 1px solid #07284F; }
+    #booking .section:nth-child(3) .btn:hover {
+      color: #2289FB;
+      background-color: #07284F; }
+#booking .section:nth-child(4) {
   background-color: #07284F; }
-#booking h3.step {
-  color: #80EDF4; }
+  #booking .section:nth-child(4) .btn {
+    color: #80EDF4;
+    background-color: transparent;
+    border: 1px solid #80EDF4; }
+    #booking .section:nth-child(4) .btn:hover {
+      color: #07284F;
+      background-color: #80EDF4; }
+#booking #header {
+  background-image: url(../img/booking_header.jpg); }
 #booking .faninc {
   background-color: #fff;
   padding: 2rem;
-  margin-top: -3rem;
-  margin-bottom: 5rem; }
+  margin-top: 2.5rem; }
+#booking .price {
+  font-size: 1.5em;
+  margin-bottom: 0.3em; }
+  #booking .price .per-day {
+    font-size: 0.5em; }
 
+#programme .navbar-bg {
+  background-color: #631406; }
 #programme #dfd-logo rect,
 #programme #croatia-2019-logo {
   fill: #FDBB2C; }
 #programme .nav-item:nth-child(1) > .nav-link {
   color: #FDBB2C; }
-#programme #lineup {
+#programme .section:nth-child(2) {
   background-color: #F78825; }
-#programme #stages,
-#programme .navbar-bg {
+  #programme .section:nth-child(2) .btn {
+    color: #631406;
+    background-color: transparent;
+    border: 1px solid #631406; }
+    #programme .section:nth-child(2) .btn:hover {
+      color: #F78825;
+      background-color: #631406; }
+#programme .section:nth-child(3) {
   background-color: #F1521D; }
+  #programme .section:nth-child(3) .btn {
+    color: #631406;
+    background-color: transparent;
+    border: 1px solid #631406; }
+    #programme .section:nth-child(3) .btn:hover {
+      color: #F1521D;
+      background-color: #631406; }
+#programme .section:nth-child(4) {
+  background-color: #631406; }
+  #programme .section:nth-child(4) .btn {
+    color: #FDBB2C;
+    background-color: transparent;
+    border: 1px solid #FDBB2C; }
+    #programme .section:nth-child(4) .btn:hover {
+      color: #631406;
+      background-color: #FDBB2C; }
+#programme #header {
+  background-image: url(../img/programme_header.jpg); }
 #programme #lineup ul {
   font-family: 'ag-defectedbrand-bold', 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial;
   list-style: none;
@@ -195,6 +291,8 @@ p {
   position: relative;
   margin-top: 6rem;
   margin-bottom: 12rem; }
+  #programme .stage img {
+    opacity: 0.8; }
 #programme .stage.img-right {
   margin-left: calc((100vw - 1140px) / 2);
   margin-right: -30px; }
