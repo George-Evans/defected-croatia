@@ -1,43 +1,51 @@
+/*Mixins*/
+
+@mixin transition($property) {
+	-webkit-transition: $property;
+	-moz-transition: $property;
+	-o-transition: $property;
+	transition: $property;
+}
+
+
 /*Color Palette*/
 
 /*Internals*/
-$x-purple-1000: #1D2452;
-$x-purple-900: #552470;
-$x-purple-700: #7F318B;
-$x-purple-500: #9D3D9A;
+$x-orange-highlight: #FDBB2C;
+$x-orange-light: #F78825;
+$x-orange-med: #F1521D; 
+$x-orange-dark: #631406;
 
-$x-red-900: #C40027;
-$x-red-800: #D30734;
-$x-red-600: #F22442;
-$x-red-400: #FA495C;
+$x-blue-highlight: #80EDF4;
+$x-blue-light: #52BCF7;
+$x-blue-med: #2289FB;
+$x-blue-dark: #07284F;
 
-$x-orange-900: #FF6E00;
-$x-orange-700: #FF9F00;
-$x-orange-500: #FFC005;
-
-$x-yellow-600: #FFD800;
-$x-yellow-400: #FDEC3F;
-$x-yellow-200: #FFF595;
-
-/*Home*/
-$home-1: $x-purple-900;
-$home-2: $x-purple-700;
-$home-3: $x-purple-500;
+$x-purple-highlight: #F243CA;
+$x-purple-light: #A62EAE;
+$x-purple-med: #5D1994;
+$x-purple-dark: #33064A;
 
 /*Programme*/
-$prog-1: $x-red-600;
-$prog-2: $x-red-900;
-$prog-3: $x-red-400;
+$prog-1: $x-orange-light;
+$prog-2: $x-orange-med;
+$prog-3: $x-orange-dark;
+$prog-em: $x-orange-highlight;
 
 /*Location*/
-$loc-1: $x-orange-900;
-$loc-2: $x-orange-900;
+
 
 /*Booking*/
-$book-1: $x-yellow-600;
-$book-2: $x-yellow-400;
-$book-3: $x-yellow-200;
-$book-txt: $x-purple-1000;
+$book-1: $x-blue-light;
+$book-2: $x-blue-med;
+$book-3: $x-blue-dark;
+$book-em: $x-blue-highlight;
+
+/*Info*/
+$info-1: $x-purple-light;
+$info-2: $x-purple-med;
+$info-3: $x-purple-dark;
+$info-em: $x-purple-highlight;
 
 
 /*Typography*/
@@ -56,32 +64,40 @@ $book-txt: $x-purple-1000;
 /*UI Components*/
 
 h1,
-h2,
-h3 {
+h2 {
 	font-family: 'ag-defectedbrand-bold', 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial;
 	text-transform: uppercase;
-	line-height: 0.8em;
 	font-kerning: normal;
-}
-
-a {
-	font-family: 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial;
-	text-transform: uppercase;
+	margin-bottom: 0.2em;
 }
 
 h1 {
-	font-size: 9em;
 	line-height: 0.8em;
+}
+
+h2,
+h3 {
+	line-height: 0.9em;
+}
+
+
+h3,
+a {
+	font-family: 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+}
+
+h1 {
+	font-size: 8em;
 }
 
 h2 {
 	font-size: 6em;
-	margin-bottom: 0.3em;
 }
 
 h3 {
-	font-size: 3em;
-	margin-bottom: 0.4em;
+	font-size: 2.2em;
 }
 
 p {
@@ -140,50 +156,64 @@ p {
 	margin-top: 20px;
 }
 
-/*Section Slanting*/
 
-.section {
-	padding: 80px 0 160px;
-	margin-top: -80px;
+
+/*Navigation*/
+
+.navbar {
+	padding: 2.5rem;
 }
 
-.container {
-	padding-left: 30px;
-	padding-right: 30px;
-}
+.navbar-brand {
+	line-height: 1.25rem;
 
-#header {
-	z-index: 0;
-	background-size: cover;
-	height: auto;
-}
+	img,
+	svg {
+		height: 2rem;
+		width: auto;
+	}
 
-.section:nth-child(2) {
-	transform: skewY(-4deg);
-	z-index: 1;
-
-	.container {
-		transform: skewY(4deg);
+	> div {
+		display: inline-block;
+		vertical-align: top;
 	}
 }
 
-.section:nth-child(3) {
-	transform: skewY(2deg);
-	z-index: 2;
-
-	.container {
-		transform: skewY(-2deg);
+#dfd-logo {
+	path,
+	polygon {
+		fill: #ffffff;
 	}
 }
- 
 
-.section:nth-child(4) {
-	transform: skewY(-1deg);
-	z-index: 3;
+#croatia-2019-logo {
+	margin-right: 2px;
+}
 
-	.container {
-		transform: skewY(1deg);
+#date-countdown {
+	font-size: 0.5em;
+	line-height: 1em;
+	margin-top: 1px;
+
+	.countdown {
+		font-size: 1.4em;
 	}
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-right: 0;
+	padding-left: 2rem;
+	font-size: 0.9em;
+}
+
+.navbar-bg {
+	position: fixed;
+	height: 20px;
+	top: -20px;
+	left: 0;
+	width: 100%;
+	z-index: 1020;
+	@include transition(all 0.2s ease-in-out);
 }
 
 /*Page & Section Colours*/
@@ -207,8 +237,16 @@ p {
 }
 
 #booking {
-	color: $book-txt;
 
+	#dfd-logo rect,
+	#croatia-2019-logo {
+		fill: $book-em;
+	}
+
+	.nav-item:nth-child(1) > .nav-link {
+		color: $book-em;
+	}
+	
 	#header {
 		background-image: url(../img/bookingheader.jpg);
 	}
@@ -221,69 +259,144 @@ p {
 		background-color: $book-2;
 	}
 
-	#travel {
+	#travel,
+	.navbar-bg {
 		background-color: $book-3;
 	}
 
 	h3.step {
-		color: $x-red-600;
+		color: $book-em;
+	}
+
+	.faninc {
+		background-color: #fff;
+		padding: 2rem;
+		margin-top: -3rem;
+		margin-bottom: 5rem;
 	}
 
 }
 
 #programme {
 
+	#dfd-logo rect,
+	#croatia-2019-logo {
+		fill: $prog-em;
+	}
+
+	.nav-item:nth-child(1) > .nav-link {
+		color: $prog-em;
+	}
+
 	#lineup {
 		background-color: $prog-1;
 	}
 
-	#stages {
+	#stages,
+	.navbar-bg {
 		background-color: $prog-2;
 	}
 
-}
+	#lineup {
+		ul {
+			font-family: 'ag-defectedbrand-bold', 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial;
+			list-style: none;
+			padding-inline-start: 0;
+			padding-left: 0;
+			line-height: 0.9em;
+		}
 
+		li {
+			display: inline-block;
+			padding-right: 0.3em;
+		}
 
-/*Navigation*/
+		.lineup-t1 {
+			font-size: 4.5em;
+		}
 
-.navbar {
-	padding: 2.5rem;
-}
+		.lineup-t2 {
+			font-size: 3.2em;
+		}
 
-.navbar-brand {
-	line-height: 1.25rem;
-
-	img {
-		height: 2rem;
-		width: auto;
+		.lineup-t3 {
+			font-size: 1.6em;
+		}
 	}
 
-	> div {
-		display: inline-block;
-		vertical-align: top;
+	.stage {
+		position: relative;
+		margin-top: 6rem;
+		margin-bottom: 12rem;
+	}
+
+	.stage.img-right {
+		margin-left: calc((100vw - 1140px) / 2);
+		margin-right: -30px; 
+	}
+
+	.stage.img-left {
+		margin-right: calc((100vw - 1140px) / 2);
+		margin-left: -30px;
+	}
+
+	.stage-img.left {
+		position: absolute;
+		right: 0;
+	}
+
+}
+
+/*Section Slanting*/
+
+.section {
+	padding: 80px 0 160px;
+	margin-top: -80px;
+}
+
+.container {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#header {
+	z-index: 0;
+	background-size: cover;
+	height: auto;
+}
+
+.section:nth-child(2) {
+	transform: skewY(-4deg);
+	z-index: 2;
+
+	.container,
+	.container-fluid {
+		transform: skewY(4deg);
+	}
+}
+
+.section:nth-child(3) {
+	transform: skewY(2deg);
+	z-index: 4;
+
+	.container,
+	.container-fluid {
+		transform: skewY(-2deg);
+	}
+}
+ 
+
+.section:nth-child(4) {
+	transform: skewY(-1deg);
+	z-index: 6;
+
+	.container,
+	.container-fluid {
+		transform: skewY(1deg);
 	}
 }
 
 
-#date-countdown {
-	font-size: 0.5em;
-	line-height: 1em;
-	margin-top: 1px;
-
-	.countdown {
-		font-size: 1.4em;
-	}
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-	padding-right: 0;
-	padding-left: 2rem;
-	font-size: 0.9em;
-}
-
-.nav-item:nth-child(1) > .nav-link {
-	color: $x-yellow-600;
-}
 
 
 
@@ -466,11 +579,6 @@ a:hover {
 
 	.lg-hide {
 		display: none;
-	}
-
-	.container {
-		max-width: 860px;
-		padding: 0;
 	}
 
 	.hero-logo {

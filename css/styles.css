@@ -1,9 +1,10 @@
+/*Mixins*/
 /*Color Palette*/
 /*Internals*/
-/*Home*/
 /*Programme*/
 /*Location*/
 /*Booking*/
+/*Info*/
 /*Typography*/
 @font-face {
   font-family: 'ag-defectedbrand-bold';
@@ -13,28 +14,33 @@
   font-style: normal; }
 /*UI Components*/
 h1,
-h2,
-h3 {
+h2 {
   font-family: 'ag-defectedbrand-bold', 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial;
   text-transform: uppercase;
-  line-height: 0.8em;
-  font-kerning: normal; }
-
-a {
-  font-family: 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial;
-  text-transform: uppercase; }
+  font-kerning: normal;
+  margin-bottom: 0.2em; }
 
 h1 {
-  font-size: 9em;
   line-height: 0.8em; }
 
+h2,
+h3 {
+  line-height: 0.9em; }
+
+h3,
+a {
+  font-family: 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial;
+  text-transform: uppercase;
+  letter-spacing: -0.02em; }
+
+h1 {
+  font-size: 8em; }
+
 h2 {
-  font-size: 6em;
-  margin-bottom: 0.3em; }
+  font-size: 6em; }
 
 h3 {
-  font-size: 3em;
-  margin-bottom: 0.4em; }
+  font-size: 2.2em; }
 
 p {
   margin-bottom: 5rem; }
@@ -83,6 +89,122 @@ p {
   line-height: 1em;
   margin-top: 20px; }
 
+/*Navigation*/
+.navbar {
+  padding: 2.5rem; }
+
+.navbar-brand {
+  line-height: 1.25rem; }
+  .navbar-brand img,
+  .navbar-brand svg {
+    height: 2rem;
+    width: auto; }
+  .navbar-brand > div {
+    display: inline-block;
+    vertical-align: top; }
+
+#dfd-logo path,
+#dfd-logo polygon {
+  fill: #ffffff; }
+
+#croatia-2019-logo {
+  margin-right: 2px; }
+
+#date-countdown {
+  font-size: 0.5em;
+  line-height: 1em;
+  margin-top: 1px; }
+  #date-countdown .countdown {
+    font-size: 1.4em; }
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 2rem;
+  font-size: 0.9em; }
+
+.navbar-bg {
+  position: fixed;
+  height: 20px;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  z-index: 1020;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+/*Page & Section Colours*/
+#home #header {
+  height: 100vh;
+  position: relative;
+  background: url(../img/dennis_mob.jpg); }
+#home #thankyou {
+  background-color: #E84242; }
+#home #signup {
+  background-color: #1D2452; }
+
+#booking #dfd-logo rect,
+#booking #croatia-2019-logo {
+  fill: #80EDF4; }
+#booking .nav-item:nth-child(1) > .nav-link {
+  color: #80EDF4; }
+#booking #header {
+  background-image: url(../img/bookingheader.jpg); }
+#booking #tickets {
+  background-color: #52BCF7; }
+#booking #accommodation {
+  background-color: #2289FB; }
+#booking #travel,
+#booking .navbar-bg {
+  background-color: #07284F; }
+#booking h3.step {
+  color: #80EDF4; }
+#booking .faninc {
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: -3rem;
+  margin-bottom: 5rem; }
+
+#programme #dfd-logo rect,
+#programme #croatia-2019-logo {
+  fill: #FDBB2C; }
+#programme .nav-item:nth-child(1) > .nav-link {
+  color: #FDBB2C; }
+#programme #lineup {
+  background-color: #F78825; }
+#programme #stages,
+#programme .navbar-bg {
+  background-color: #F1521D; }
+#programme #lineup ul {
+  font-family: 'ag-defectedbrand-bold', 'ITCAvantGardeGothW04-Bo 1122872', "Helvetica Neue", Arial;
+  list-style: none;
+  padding-inline-start: 0;
+  padding-left: 0;
+  line-height: 0.9em; }
+#programme #lineup li {
+  display: inline-block;
+  padding-right: 0.3em; }
+#programme #lineup .lineup-t1 {
+  font-size: 4.5em; }
+#programme #lineup .lineup-t2 {
+  font-size: 3.2em; }
+#programme #lineup .lineup-t3 {
+  font-size: 1.6em; }
+#programme .stage {
+  position: relative;
+  margin-top: 6rem;
+  margin-bottom: 12rem; }
+#programme .stage.img-right {
+  margin-left: calc((100vw - 1140px) / 2);
+  margin-right: -30px; }
+#programme .stage.img-left {
+  margin-right: calc((100vw - 1140px) / 2);
+  margin-left: -30px; }
+#programme .stage-img.left {
+  position: absolute;
+  right: 0; }
+
 /*Section Slanting*/
 .section {
   padding: 80px 0 160px;
@@ -99,77 +221,24 @@ p {
 
 .section:nth-child(2) {
   transform: skewY(-4deg);
-  z-index: 1; }
-  .section:nth-child(2) .container {
+  z-index: 2; }
+  .section:nth-child(2) .container,
+  .section:nth-child(2) .container-fluid {
     transform: skewY(4deg); }
 
 .section:nth-child(3) {
   transform: skewY(2deg);
-  z-index: 2; }
-  .section:nth-child(3) .container {
+  z-index: 4; }
+  .section:nth-child(3) .container,
+  .section:nth-child(3) .container-fluid {
     transform: skewY(-2deg); }
 
 .section:nth-child(4) {
   transform: skewY(-1deg);
-  z-index: 3; }
-  .section:nth-child(4) .container {
+  z-index: 6; }
+  .section:nth-child(4) .container,
+  .section:nth-child(4) .container-fluid {
     transform: skewY(1deg); }
-
-/*Page & Section Colours*/
-#home #header {
-  height: 100vh;
-  position: relative;
-  background: url(../img/dennis_mob.jpg); }
-#home #thankyou {
-  background-color: #E84242; }
-#home #signup {
-  background-color: #1D2452; }
-
-#booking {
-  color: #1D2452; }
-  #booking #header {
-    background-image: url(../img/bookingheader.jpg); }
-  #booking #tickets {
-    background-color: #FFD800; }
-  #booking #accommodation {
-    background-color: #FDEC3F; }
-  #booking #travel {
-    background-color: #FFF595; }
-  #booking h3.step {
-    color: #F22442; }
-
-#programme #lineup {
-  background-color: #F22442; }
-#programme #stages {
-  background-color: #C40027; }
-
-/*Navigation*/
-.navbar {
-  padding: 2.5rem; }
-
-.navbar-brand {
-  line-height: 1.25rem; }
-  .navbar-brand img {
-    height: 2rem;
-    width: auto; }
-  .navbar-brand > div {
-    display: inline-block;
-    vertical-align: top; }
-
-#date-countdown {
-  font-size: 0.5em;
-  line-height: 1em;
-  margin-top: 1px; }
-  #date-countdown .countdown {
-    font-size: 1.4em; }
-
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding-right: 0;
-  padding-left: 2rem;
-  font-size: 0.9em; }
-
-.nav-item:nth-child(1) > .nav-link {
-  color: #FFD800; }
 
 body {
   background-color: #000;
@@ -305,10 +374,6 @@ a:hover {
 
   .lg-hide {
     display: none; }
-
-  .container {
-    max-width: 860px;
-    padding: 0; }
 
   .hero-logo {
     width: 70%; } }
