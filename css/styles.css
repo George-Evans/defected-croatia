@@ -24,6 +24,10 @@ body {
 a {
   color: #fff; }
 
+ol,
+ul {
+  -webkit-padding-start: 24px; }
+
 /*Responsive Show-Hides*/
 .sm-show,
 .md-show,
@@ -555,6 +559,17 @@ footer.homepage {
     color: #F243CA; }
 #info #header {
   background-image: url(../img/info_header.jpg); }
+#info .see-more.whatsapp {
+  font-size: 1.4em; }
+#info ul.icons {
+  -webkit-padding-start: 0; }
+  #info ul.icons img {
+    height: 2.5rem;
+    opacity: 1; }
+    #info ul.icons img:hover {
+      -ms-transform: translateX(0) translateY(-2px);
+      -webkit-transform: translate(0, -2px);
+      transform: translate(0, -2px); }
 
 /*/////////////////////////////////////
 	Section Slanting

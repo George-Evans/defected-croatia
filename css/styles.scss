@@ -9,6 +9,14 @@
 	transition: $property;
 }
 
+@mixin translate($x, $y) {
+	-ms-transform: translateX($x) translateY($y);
+	-webkit-transform: translate($x, $y);
+	transform: translate($x, $y);
+}
+	
+
+
 /*/////////////////////////////////////
 	Color Palette
 /////////////////////////////////////*/
@@ -128,6 +136,11 @@ body {
 
 a {
 	color: #fff;
+}
+
+ol,
+ul {
+	-webkit-padding-start: 24px;
 }
 
 /*Responsive Show-Hides*/
@@ -271,9 +284,7 @@ p {
 	position: relative;
 	float: right;
 	left: -50%;
-	-ms-transform: translateX(50%) translateY(0);
-  	-webkit-transform: translate(50%,0);
-	transform: translate(50%, 0);
+	@include translate(50%, 0);
 }
 
 .btn-round {
@@ -486,9 +497,7 @@ p {
 	position: absolute;
 	top: 40%;
 	left: 50%;
-	-ms-transform: translateX(-50%) translateY(-40%);
-  -webkit-transform: translate(-50%,-40%);
-	transform: translate(-50%, -40%);
+	@include translate(-50%, -40%);
 	width: 90%;
 }
 
@@ -496,9 +505,7 @@ p {
 	position: absolute;
 	left: 50%;
 	bottom: 20%;
-	-ms-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translate(-50%,-50%);
-	transform: translate(-50%, -50%);
+	@include translate(-50%, -50%);
 }
 
 
@@ -576,6 +583,23 @@ p {
 
 	#header {
 		background-image: url(../img/info_header.jpg);
+	}
+
+	.see-more.whatsapp {
+		font-size: 1.4em;
+	}
+
+	ul.icons {
+		-webkit-padding-start: 0;
+
+		img {
+			height: 2.5rem;
+			opacity: 1;
+
+			&:hover {
+				@include translate(0, -2px);
+			}
+		}
 	}
 }
 
@@ -766,9 +790,7 @@ footer {
 		position: fixed;
 		left: 5vw;
 		top: 60vh;
-		-ms-transform: translateX(0) translateY(0);
-  		-webkit-transform: translate(0,0);
-		transform: translate(0, 0);
+		@include translate(0, 0);
 	}
 
 	.btn-round {
