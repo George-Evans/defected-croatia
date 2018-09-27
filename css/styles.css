@@ -184,6 +184,9 @@ p {
   padding-right: 0;
   padding-left: 2rem;
   font-size: 0.9em; }
+  .navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: inherit;
+    text-decoration: underline; }
 
 .navbar-bg {
   position: fixed;
@@ -393,21 +396,21 @@ footer.homepage {
   #booking .section:nth-child(3) a.see-more:hover {
     color: #07284F; }
 #booking .section:nth-child(4) {
-  background-color: #52BCF7; }
+  background-color: #07284F; }
   #booking .section:nth-child(4) .alt {
-    color: #07284F; }
+    color: #80EDF4; }
   #booking .section:nth-child(4) .btn {
-    color: #07284F;
+    color: #80EDF4;
     background-color: transparent;
-    border: 1px solid #07284F; }
+    border: 1px solid #80EDF4; }
     #booking .section:nth-child(4) .btn:hover {
-      color: #52BCF7;
-      background-color: #07284F; }
+      color: #07284F;
+      background-color: #80EDF4; }
     #booking .section:nth-child(4) .btn:active {
-      color: #52BCF7;
-      background-color: #031020; }
+      color: #07284F;
+      background-color: #51e6f0; }
   #booking .section:nth-child(4) a.see-more:hover {
-    color: #07284F; }
+    color: #80EDF4; }
 #booking #header {
   background-image: url(../img/booking_header.jpg); }
 #booking .faninc {
@@ -461,21 +464,21 @@ footer.homepage {
   #programme .section:nth-child(3) a.see-more:hover {
     color: #631406; }
 #programme .section:nth-child(4) {
-  background-color: #F78825; }
+  background-color: #631406; }
   #programme .section:nth-child(4) .alt {
-    color: #631406; }
+    color: #ffd12b; }
   #programme .section:nth-child(4) .btn {
-    color: #631406;
+    color: #ffd12b;
     background-color: transparent;
-    border: 1px solid #631406; }
+    border: 1px solid #ffd12b; }
     #programme .section:nth-child(4) .btn:hover {
-      color: #F78825;
-      background-color: #631406; }
+      color: #631406;
+      background-color: #ffd12b; }
     #programme .section:nth-child(4) .btn:active {
-      color: #F78825;
-      background-color: #330a03; }
+      color: #631406;
+      background-color: #f7c100; }
   #programme .section:nth-child(4) a.see-more:hover {
-    color: #631406; }
+    color: #ffd12b; }
 #programme #header {
   background-image: url(../img/programme_header.jpg); }
 #programme .stage {
@@ -535,21 +538,21 @@ footer.homepage {
   #info .section:nth-child(3) a.see-more:hover {
     color: #33064A; }
 #info .section:nth-child(4) {
-  background-color: #A62EAE; }
+  background-color: #33064A; }
   #info .section:nth-child(4) .alt {
-    color: #33064A; }
+    color: #F243CA; }
   #info .section:nth-child(4) .btn {
-    color: #33064A;
+    color: #F243CA;
     background-color: transparent;
-    border: 1px solid #33064A; }
+    border: 1px solid #F243CA; }
     #info .section:nth-child(4) .btn:hover {
-      color: #A62EAE;
-      background-color: #33064A; }
+      color: #33064A;
+      background-color: #F243CA; }
     #info .section:nth-child(4) .btn:active {
-      color: #A62EAE;
-      background-color: #12021b; }
+      color: #33064A;
+      background-color: #ef13bd; }
   #info .section:nth-child(4) a.see-more:hover {
-    color: #33064A; }
+    color: #F243CA; }
 #info #header {
   background-image: url(../img/info_header.jpg); }
 
@@ -569,6 +572,13 @@ footer.homepage {
   background-size: cover;
   height: auto; }
 
+.section {
+  transform: skewY(2deg);
+  z-index: 4; }
+  .section .container,
+  .section .container-fluid {
+    transform: skewY(-2deg); }
+
 .section:nth-child(2) {
   padding-top: 0;
   transform: skewY(-4deg);
@@ -577,18 +587,11 @@ footer.homepage {
   .section:nth-child(2) .container-fluid {
     transform: skewY(4deg); }
 
-.section:nth-child(3) {
-  transform: skewY(2deg);
-  z-index: 4; }
-  .section:nth-child(3) .container,
-  .section:nth-child(3) .container-fluid {
-    transform: skewY(-2deg); }
-
-.section:nth-child(4) {
+.section:nth-last-child(1) {
   transform: skewY(-1deg);
   z-index: 6; }
-  .section:nth-child(4) .container,
-  .section:nth-child(4) .container-fluid {
+  .section:nth-last-child(1) .container,
+  .section:nth-last-child(1) .container-fluid {
     transform: skewY(1deg); }
 
 footer {

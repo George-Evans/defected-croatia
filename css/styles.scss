@@ -109,7 +109,7 @@ $info-em: $x-purple-highlight;
 	}
 
 	.section:nth-child(4) { 
-		@include section-color($light, $dark); 
+		@include section-color($dark, $highlight); 
 	}
 
 }
@@ -336,6 +336,11 @@ p {
 	padding-right: 0;
 	padding-left: 2rem;
 	font-size: 0.9em;
+
+	&:hover {
+		color: inherit;
+		text-decoration: underline;
+	}
 }
 
 .navbar-bg {
@@ -596,6 +601,16 @@ p {
 	height: auto;
 }
 
+.section {
+	transform: skewY(2deg);
+	z-index: 4;
+
+	.container,
+	.container-fluid {
+		transform: skewY(-2deg);
+	}
+}
+
 .section:nth-child(2) {
 	padding-top: 0;
 	transform: skewY(-4deg);
@@ -607,18 +622,7 @@ p {
 	}
 }
 
-.section:nth-child(3) {
-	transform: skewY(2deg);
-	z-index: 4;
-
-	.container,
-	.container-fluid {
-		transform: skewY(-2deg);
-	}
-}
- 
-
-.section:nth-child(4) {
+.section:nth-last-child(1) {
 	transform: skewY(-1deg);
 	z-index: 6;
 
