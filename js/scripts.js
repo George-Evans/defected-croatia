@@ -9,10 +9,13 @@ $('#date-countdown').countdown('2019/08/08 14:00:00', function(event){
 
 // Navbar BG on scroll
 var navbarHeight = $('.navbar').outerHeight();
+var navbarBGHeight = $('.navbar-bg').height();
 $(window).scroll(function () {
 	if ($(window).scrollTop() > navbarHeight) {
 		$('.navbar-bg').height(navbarHeight + 20);
+		$('.home-hide').css('display', 'inline-block');
 	} else {
 		$('.navbar-bg').height('20px');
+		$('.home-hide').hide();
 	}
 });
