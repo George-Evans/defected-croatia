@@ -45,8 +45,9 @@
 
 		<!-- // Navigation -->
 		<div class="navbar-bg"></div>
-		<nav class="navbar navbar-expand-lg fixed-top">
-			<div class="navbar-brand">
+		<nav class="navbar navbar-expand-md fixed-top">
+			<div class="container">
+				<div class="navbar-brand">
 				<a href="index.html">
 					<svg id="dfd-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 viewBox="0 0 524.5 83.1" style="enable-background:new 0 0 524.5 83.1;" xml:space="preserve">
@@ -154,16 +155,21 @@
 					</svg>
 				</a>
 				<div>
-					<div>08 – 13 August</div>
-					<div id="date-countdown"></div>
+					<div class="md-show">08 – 13 August</div>
+					<div id="date-countdown" class="md-show"></div>
 				</div>
 			</div>
 
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#croatiaNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <input id="burger" type="checkbox" />
+			    <label for="burger">
+				    <span></span>
+				    <span></span>
+				    <span></span>
+					</label>
 		  </button>
 
-		  <div class="collapse navbar-collapse">
+		  <div class="collapse navbar-collapse" id="croatiaNavbar">
 		  	<ul class="navbar-nav ml-auto">
 		  		<li class="nav-item">
 		  			<a href="booking.html" class="nav-link">Book Now</a>
@@ -179,6 +185,8 @@
 			  	</li>
 		  	</ul>
 		  </div>
+			</div>
+			
 
 		</nav>
 		<!-- Navigation // -->
@@ -247,51 +255,51 @@
 				<div class="container-fluid">
 
 					<div class="row stage img-right">
-						<div class="col-4">
+						<div class="col-12 col-md-4">
 							<h3>Beach Stage</h3>
 							<p>Nestled directly on the Adriatic at the end of The Garden’s beach, this is the ultimate spot for soaking up Defected Croatia’s stunning setting. During the day, the Beach Stage offers uninterrupted views across the bay and crystal clear waters. The music kicks off here in the early afternoon, soundtracking the last hours of sunshine until dark, when flooded with multi-coloured light the stage really comes into its own. The Beach Stage is the festival’s tucked-away party piece.</p>
 						</div>
-						<div class="col-8">
+						<div class="col-12 col-md-8">
 							<img src="img/beachstage.jpg" class="img-fluid">
 						</div>
 					</div>
 
 					<div class="row stage img-left">
-						<div class="col-8">
+						<div class="col-12 col-md-8">
 							<img src="img/mainstage.jpg" class="img-fluid">
 						</div>
-						<div class="col-4">
+						<div class="col-12 col-md-4">
 							<h3>Main Stage</h3>
 							<p>Kicking off every evening with performances from the festival’s headliners including live acts and superstar DJs, the Main Stage is the centre of attention after dark. The largest at the site, the Main Stage is at the heart of The Garden, surrounded by the bars, food shacks and facilities. Expect to see all your favourites of the world’s biggest DJs on their very finest forms.</p>
 						</div>
 					</div>
 
 					<div class="row stage img-right">
-						<div class="col-4">
+						<div class="col-12 col-md-4">
 							<h3>Olive Grove</h3>
 							<p>The Main Stage’s sidekick is the Olive Grove with its large canopy, making it perfect for daytime raving. Beautifully shaded and surrounded by trees, it’s a picturesque spot in the heart of the festival site. Just a couple of minutes from the beach and close to the bars and amenities, this is your first place to head when arriving at the site.</p>
 						</div>
-						<div class="col-8">
+						<div class="col-12 col-md-8">
 							<img src="img/olivegrove.jpg" class="img-fluid">
 						</div>
 					</div>
 
 					<div class="row stage img-left">
-						<div class="col-8">
+						<div class="col-12 col-md-8">
 							<img src="img/boatparties.jpg" class="img-fluid">
 						</div>
-						<div class="col-4">
+						<div class="col-12 col-md-4">
 							<h3>Boat Parties</h3>
 							<p>There are at least two boat parties every day during the festival, setting sail from the site’s jetty on The Garden’s famous boat The Argonaught. With an upper and lower deck, a top quality soundsystem and its own bar, The Argonaught is the ultimate party-equipped vessel. Boat parties last for two hours and venture out into Tisno’s calm coastline, returning to the festival in time to continue the party on site.</p>
 						</div>
 					</div>
 
 					<div class="row stage img-right">
-						<div class="col-4">
+						<div class="col-12 col-md-4">
 							<h3>Barbarella’s</h3>
 							<p>Barbarella’s discotheque is without doubt one of the most exceptional nightclubs in Europe. Harking back to the original days of clubbing in Europe with its open-air setting and breath-taking location, Barbarella’s invites you to dance all night under the stars. Like all the most magical parties, nights at Barbarella’s are rarely over until 7 - 8am. Reach the club via a short ride on a free shuttle bus, taxi, or water taxi from the main site.</p>
 						</div>
-						<div class="col-8">
+						<div class="col-12 col-md-8">
 							<img src="img/barbarellas.jpg" class="img-fluid">
 						</div>
 					</div>

@@ -15,18 +15,13 @@
 /*/////////////////////////////////////
 	Global
 /////////////////////////////////////*/
-body {
-  background-color: #000;
-  color: #fff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  position: relative; }
-
 a {
   color: #fff; }
 
 ol,
 ul {
-  -webkit-padding-start: 24px; }
+  -webkit-padding-start: 24px;
+  font-size: inherit; }
 
 /*Responsive Show-Hides*/
 .sm-show,
@@ -44,6 +39,13 @@ ul {
   src: url("https://defected.com/static/font/avantgardedefectedbold-webfont?#iefix") format("embedded-opentype"), url("https://defected.com/static/font/avantgardedefectedbold-webfont.woff?6a32a2dbe2d2") format("woff"), url("https://defected.com/static/font/avantgardedefectedbold-webfont.ttf?6a32a2dbe2d2") format("truetype"), url("https://defected.com/static/font/avantgardedefectedbold-webfont.svg?6a32a2dbe2d2#avant_garde_defected_brand_Rg") format("svg");
   font-weight: normal;
   font-style: normal; }
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 9px;
+  position: relative; }
+
 h1,
 h2,
 h3,
@@ -72,16 +74,16 @@ a,
   line-height: 1em; }
 
 h1 {
-  font-size: 8em;
+  font-size: 6em;
   line-height: 0.8em;
   margin-bottom: 0.2em; }
 
 h2 {
-  font-size: 6em;
+  font-size: 4em;
   margin-bottom: 1em; }
 
 h3 {
-  font-size: 3em;
+  font-size: 2.6em;
   margin-bottom: 0.3em; }
 
 h4 {
@@ -97,10 +99,15 @@ h2,
 h3 {
   line-height: 0.9em; }
 
+p,
+.p {
+  font-size: 1rem; }
+
 /*/////////////////////////////////////
 	UI Components
 /////////////////////////////////////*/
 a.see-more {
+  font-size: 0.8rem;
   text-decoration: underline;
   margin-right: 0.6rem; }
 
@@ -118,11 +125,11 @@ p {
   padding-bottom: 30vh; }
 
 .btn {
-  font-size: 1.2rem;
-  padding: 1rem 5rem;
+  font-size: 1.6em;
+  padding: 1rem 2em;
+  min-width: 80%;
   border-radius: 0;
   display: block;
-  width: min-content;
   margin-bottom: 1.2rem; }
 
 .btn-primary:hover,
@@ -158,13 +165,13 @@ p {
 	Navigation
 /////////////////////////////////////*/
 .navbar {
-  padding: 2.5rem; }
+  padding: 1rem; }
 
 .navbar-brand {
   line-height: 1.25rem; }
   .navbar-brand img,
   .navbar-brand svg {
-    height: 2rem;
+    height: 0.8rem;
     width: auto; }
   .navbar-brand > div {
     display: inline-block;
@@ -184,11 +191,10 @@ p {
   #date-countdown .countdown {
     font-size: 1.4em; }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding-right: 0;
-  padding-left: 2rem;
-  font-size: 0.9em; }
-  .navbar-expand-lg .navbar-nav .nav-link:hover {
+.navbar-expand-md .navbar-nav .nav-link {
+  padding: 0.5rem 0;
+  font-size: 0.9rem; }
+  .navbar-expand-md .navbar-nav .nav-link:hover {
     color: inherit;
     text-decoration: underline; }
 
@@ -204,6 +210,50 @@ p {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   border-bottom: 1px solid #fff; }
+
+/*menu icon*/
+#burger {
+  display: none; }
+
+label {
+  margin-bottom: 0; }
+
+body input + label {
+  position: relative;
+  height: 16px;
+  width: 20px;
+  z-index: 5; }
+
+body input + label span {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  left: 0;
+  display: block;
+  background: #fff;
+  transition: 0.5s; }
+
+body input + label span:first-child {
+  top: 3px; }
+
+body input + label span:last-child {
+  top: 13px; }
+
+body label:hover {
+  cursor: pointer; }
+
+body input:checked + label span {
+  opacity: 0;
+  top: 50%; }
+
+body input:checked + label span:first-child {
+  opacity: 1;
+  transform: rotate(405deg); }
+
+body input:checked + label span:last-child {
+  opacity: 1;
+  transform: rotate(-405deg); }
 
 /*/////////////////////////////////////
 	Page & Section Colours
@@ -291,7 +341,7 @@ p {
       color: #900025; }
 
 #booking-tab {
-  padding: 8rem 0 8rem;
+  padding: 1rem 0;
   margin-top: -80px;
   background-color: #2289FB;
   background-image: url(../img/bookingtab_bg.jpg);
@@ -316,6 +366,8 @@ p {
         background-color: #51e6f0; }
     #booking-tab .col-12:nth-child(1) .btn {
       margin: 0 auto; }
+    #booking-tab .col-12:nth-child(1) h2 {
+      margin-bottom: .5rem; }
   #booking-tab .col-12:nth-child(2) {
     background-image: url(../img/bookingtab_feat.jpg);
     background-size: cover;
@@ -335,11 +387,11 @@ footer.homepage {
   display: inline-block;
   padding-right: 0.3em; }
 #lineup .lineup-t1 {
-  font-size: 4.5em; }
+  font-size: 2.7em; }
   #lineup .lineup-t1 li {
     display: block; }
 #lineup .lineup-t2 {
-  font-size: 3.2em; }
+  font-size: 1.7em; }
 #lineup .lineup-t3 {
   font-size: 1.6em; }
 
@@ -427,7 +479,7 @@ footer.homepage {
   padding: 2rem;
   margin-top: 2.5rem; }
 #booking .price {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin-bottom: 0.3em; }
   #booking .price .per-day {
     font-size: 0.5em; }
@@ -682,17 +734,62 @@ footer {
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   .md-show {
-    display: inherit; }
+    display: block; }
 
   .md-hide {
     display: none; }
 
-  #booking-tab .col-12:nth-child(2) {
-    height: auto; } }
+  /*Typography*/
+  body {
+    font-size: 14px; }
+
+  a.see-more {
+    font-size: 1rem; }
+
+  h1 {
+    font-size: 8em; }
+
+  h2 {
+    font-size: 6em; }
+
+  h3 {
+    font-size: 3em; }
+
+  /*UI Components*/
+  .btn {
+    min-width: 0;
+    width: min-content;
+    padding: 1rem 3rem; }
+
+  #booking-tab {
+    padding: 8rem 0; }
+    #booking-tab .col-12:nth-child(2) {
+      height: auto; }
+
+  /*Navigation*/
+  .navbar {
+    padding: 2.5em; }
+
+  .navbar-brand img,
+  .navbar-brand svg {
+    height: 2rem;
+    width: auto; }
+
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding: 0 0 0 1rem;
+    font-size: 0.9rem; }
+
+  /*Lineup*/
+  #lineup .lineup-t1 {
+    font-size: 4.5em; }
+  #lineup .lineup-t2 {
+    font-size: 3.2em; }
+  #lineup .lineup-t3 {
+    font-size: 1.6em; } }
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
   .lg-show {
-    display: inherit; }
+    display: block; }
 
   .lg-hide {
     display: none; }

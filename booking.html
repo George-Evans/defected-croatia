@@ -44,8 +44,9 @@
 
 		<!-- // Navigation -->
 		<div class="navbar-bg"></div>
-		<nav class="navbar navbar-expand-lg fixed-top">
-			<div class="navbar-brand">
+		<nav class="navbar navbar-expand-md fixed-top">
+			<div class="container">
+				<div class="navbar-brand">
 				<a href="index.html">
 					<svg id="dfd-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 viewBox="0 0 524.5 83.1" style="enable-background:new 0 0 524.5 83.1;" xml:space="preserve">
@@ -153,16 +154,21 @@
 					</svg>
 				</a>
 				<div>
-					<div>08 – 13 August</div>
-					<div id="date-countdown">TEST</div>
+					<div class="md-show">08 – 13 August</div>
+					<div id="date-countdown" class="md-show"></div>
 				</div>
 			</div>
 
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#croatiaNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <input id="burger" type="checkbox" />
+			    <label for="burger">
+				    <span></span>
+				    <span></span>
+				    <span></span>
+					</label>
 		  </button>
 
-		  <div class="collapse navbar-collapse">
+		  <div class="collapse navbar-collapse" id="croatiaNavbar">
 		  	<ul class="navbar-nav ml-auto">
 		  		<li class="nav-item">
 		  			<a href="#" class="nav-link">Book Now</a>
@@ -178,6 +184,9 @@
 			  	</li>
 		  	</ul>
 		  </div>
+			</div>
+			
+
 		</nav>
 		<!-- Navigation // -->
 
@@ -186,7 +195,7 @@
 			<div id="header">
 				<div class="container">
 					<div class="headline">
-						<h1>TICKETS<br>TRAVEL<br>ACCOMODATION</h1>
+						<h1>Book Your Trip</h1>
 						<h4>Pick from our booking options to find the best package for you</h4>
 					</div>
 				</div>
@@ -222,7 +231,7 @@
 			<div class="section" id="accommodation">
 				<div class="container">
 					<h3 class="alt">Step 2:</h3>
-					<h2>Accommodation</h2>
+					<h2>Where To Stay</h2>
 					<div class="chunk">
 						<h3>The Garden Accommodation</h3>
 						<p>The Garden resort offers a range of on-site accommodation options to suit all budgets, from en suite apartments, airstreams, glamping, DIY camping, new mobile homes and a hostel, all just seconds away from the festival action.

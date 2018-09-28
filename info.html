@@ -45,8 +45,9 @@
 
 		<!-- // Navigation -->
 		<div class="navbar-bg"></div>
-		<nav class="navbar navbar-expand-lg fixed-top">
-			<div class="navbar-brand">
+		<nav class="navbar navbar-expand-md fixed-top">
+			<div class="container">
+				<div class="navbar-brand">
 				<a href="index.html">
 					<svg id="dfd-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 viewBox="0 0 524.5 83.1" style="enable-background:new 0 0 524.5 83.1;" xml:space="preserve">
@@ -154,16 +155,21 @@
 					</svg>
 				</a>
 				<div>
-					<div>08 – 13 August</div>
-					<div id="date-countdown">TEST</div>
+					<div class="md-show">08 – 13 August</div>
+					<div id="date-countdown" class="md-show"></div>
 				</div>
 			</div>
 
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#croatiaNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <input id="burger" type="checkbox" />
+			    <label for="burger">
+				    <span></span>
+				    <span></span>
+				    <span></span>
+					</label>
 		  </button>
 
-		  <div class="collapse navbar-collapse">
+		  <div class="collapse navbar-collapse" id="croatiaNavbar">
 		  	<ul class="navbar-nav ml-auto">
 		  		<li class="nav-item">
 		  			<a href="booking.html" class="nav-link">Book Now</a>
@@ -179,6 +185,8 @@
 			  	</li>
 		  	</ul>
 		  </div>
+			</div>
+			
 
 		</nav>
 		<!-- Navigation // -->
@@ -189,7 +197,7 @@
 			<div id="header">
 				<div class="container">
 					<div class="headline">
-						<h1>Everything You Need</h1>
+						<h1>All You Need To Know</h1>
 						<h3>Festival Information</h3>
 					</div>
 				</div>
@@ -699,13 +707,12 @@
 						<h3>WhatsApp List</h3>
 						<p>We will be broadcasting live from the festival, bringing you exclusive information - including updated set times, secret appearances and important messages.</p>
 						<a href="" class="see-more whatsapp">+44 7848 030298</a>
-						<p>
-							<ol>
-								<li>Add this number to your contacts.</li>
-								<li>Message '<b>START</b>' via WhatsApp to join.</li>
-							</ol>
-							Message '<b>STOP</b>' to opt out at any time.
-						</p>
+						<br><br>
+						<ol class="p">
+							<li>Add this number to your contacts.</li>
+							<li>Message '<b>START</b>' via WhatsApp to join.</li>
+						</ol>
+						<p>Message '<b>STOP</b>' to opt out at any time.</p>
 					</div>
 					<div class="chunk">
 						<h3>Social</h3>

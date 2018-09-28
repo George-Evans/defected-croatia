@@ -9,7 +9,6 @@ $('#date-countdown').countdown('2019/08/08 14:00:00', function(event){
 
 // Navbar BG on scroll
 var navbarHeight = $('.navbar').outerHeight();
-var navbarBGHeight = $('.navbar-bg').height();
 $(window).scroll(function () {
 	if ($(window).scrollTop() > navbarHeight) {
 		$('.navbar-bg').height(navbarHeight + 20);
@@ -20,7 +19,18 @@ $(window).scroll(function () {
 	}
 });
 
-// FAQ Accordian + & -
-$('.plus-minus').on(show.bs.collapse, function () {
-	$(this).html('-');
+// Navbar Background Match height on Navbar Toggle
+$('#croatiaNavbar').on('shown.bs.collapse', function () {
+	var navbarOpenHeight = $('.navbar').outerHeight();
+	$('.navbar-bg').height(navbarOpenHeight + 20);
 })
+
+$('#croatiaNavbar').on('hidden.bs.collapse', function () {
+	$('.navbar-bg').height('20px');
+})
+
+// // FAQ Accordian + & -
+// $('.plus-minus').on(show.bs.collapse, function () {
+// 	$(this).html('-');
+// })
+
