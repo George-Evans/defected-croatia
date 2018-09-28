@@ -211,6 +211,9 @@ p {
 .section img {
   opacity: 0.9; }
 
+#header {
+  background-attachment: fixed; }
+
 /*Homepage*/
 #homepage {
   position: relative; }
@@ -233,27 +236,27 @@ p {
       background-color: transparent;
       border: 1px solid #ffd12b; }
       #homepage #header .btn:hover {
-        color: #631406;
+        color: #900025;
         background-color: #ffd12b; }
       #homepage #header .btn:active {
-        color: #631406;
+        color: #900025;
         background-color: #f7c100; }
   #homepage #lineup {
     background-color: #F1521D; }
     #homepage #lineup .alt {
-      color: #631406; }
+      color: #900025; }
     #homepage #lineup .btn {
-      color: #631406;
+      color: #900025;
       background-color: transparent;
-      border: 1px solid #631406; }
+      border: 1px solid #900025; }
       #homepage #lineup .btn:hover {
         color: #F1521D;
-        background-color: #631406; }
+        background-color: #900025; }
       #homepage #lineup .btn:active {
         color: #F1521D;
-        background-color: #330a03; }
+        background-color: #5d0018; }
     #homepage #lineup a.see-more:hover {
-      color: #631406; }
+      color: #900025; }
   #homepage #overview {
     background-color: #33064A; }
     #homepage #overview .alt {
@@ -273,19 +276,19 @@ p {
   #homepage #location {
     background-color: #F78825; }
     #homepage #location .alt {
-      color: #631406; }
+      color: #900025; }
     #homepage #location .btn {
-      color: #631406;
+      color: #900025;
       background-color: transparent;
-      border: 1px solid #631406; }
+      border: 1px solid #900025; }
       #homepage #location .btn:hover {
         color: #F78825;
-        background-color: #631406; }
+        background-color: #900025; }
       #homepage #location .btn:active {
         color: #F78825;
-        background-color: #330a03; }
+        background-color: #5d0018; }
     #homepage #location a.see-more:hover {
-      color: #631406; }
+      color: #900025; }
 
 #booking-tab {
   padding: 8rem 0 8rem;
@@ -333,6 +336,8 @@ footer.homepage {
   padding-right: 0.3em; }
 #lineup .lineup-t1 {
   font-size: 4.5em; }
+  #lineup .lineup-t1 li {
+    display: block; }
 #lineup .lineup-t2 {
   font-size: 3.2em; }
 #lineup .lineup-t3 {
@@ -361,7 +366,7 @@ footer.homepage {
 
 /*Booking Page*/
 #booking .navbar-bg {
-  background-color: #07284F; }
+  background-color: #2289FB; }
 #booking #dfd-logo rect,
 #booking #croatia-2019-logo {
   fill: #80EDF4; }
@@ -429,7 +434,7 @@ footer.homepage {
 
 /*Programme Page*/
 #programme .navbar-bg {
-  background-color: #631406; }
+  background-color: #F1521D; }
 #programme #dfd-logo rect,
 #programme #croatia-2019-logo {
   fill: #ffd12b; }
@@ -454,21 +459,21 @@ footer.homepage {
 #programme .section:nth-child(3) {
   background-color: #F78825; }
   #programme .section:nth-child(3) .alt {
-    color: #631406; }
+    color: #900025; }
   #programme .section:nth-child(3) .btn {
-    color: #631406;
+    color: #900025;
     background-color: transparent;
-    border: 1px solid #631406; }
+    border: 1px solid #900025; }
     #programme .section:nth-child(3) .btn:hover {
       color: #F78825;
-      background-color: #631406; }
+      background-color: #900025; }
     #programme .section:nth-child(3) .btn:active {
       color: #F78825;
-      background-color: #330a03; }
+      background-color: #5d0018; }
   #programme .section:nth-child(3) a.see-more:hover {
-    color: #631406; }
+    color: #900025; }
 #programme .section:nth-child(4) {
-  background-color: #631406; }
+  background-color: #900025; }
   #programme .section:nth-child(4) .alt {
     color: #ffd12b; }
   #programme .section:nth-child(4) .btn {
@@ -476,10 +481,10 @@ footer.homepage {
     background-color: transparent;
     border: 1px solid #ffd12b; }
     #programme .section:nth-child(4) .btn:hover {
-      color: #631406;
+      color: #900025;
       background-color: #ffd12b; }
     #programme .section:nth-child(4) .btn:active {
-      color: #631406;
+      color: #900025;
       background-color: #f7c100; }
   #programme .section:nth-child(4) a.see-more:hover {
     color: #ffd12b; }
@@ -502,74 +507,91 @@ footer.homepage {
   right: 0; }
 
 /*Info Page*/
-#info .navbar-bg {
-  background-color: #33064A; }
-#info #dfd-logo rect,
-#info #croatia-2019-logo {
-  fill: #F243CA; }
-#info .nav-item:nth-child(1) > .nav-link {
-  color: #F243CA; }
-#info .section:nth-child(2) {
-  background-color: #791b9e; }
-  #info .section:nth-child(2) .alt {
+#info {
+  /*Accordian Card Overides*/ }
+  #info .navbar-bg {
+    background-color: #791b9e; }
+  #info #dfd-logo rect,
+  #info #croatia-2019-logo {
+    fill: #F243CA; }
+  #info .nav-item:nth-child(1) > .nav-link {
     color: #F243CA; }
-  #info .section:nth-child(2) .btn {
-    color: #F243CA;
-    background-color: transparent;
-    border: 1px solid #F243CA; }
-    #info .section:nth-child(2) .btn:hover {
-      color: #791b9e;
-      background-color: #F243CA; }
-    #info .section:nth-child(2) .btn:active {
-      color: #791b9e;
-      background-color: #ef13bd; }
-  #info .section:nth-child(2) a.see-more:hover {
-    color: #F243CA; }
-#info .section:nth-child(3) {
-  background-color: #A62EAE; }
-  #info .section:nth-child(3) .alt {
-    color: #33064A; }
-  #info .section:nth-child(3) .btn {
-    color: #33064A;
-    background-color: transparent;
-    border: 1px solid #33064A; }
-    #info .section:nth-child(3) .btn:hover {
-      color: #A62EAE;
-      background-color: #33064A; }
-    #info .section:nth-child(3) .btn:active {
-      color: #A62EAE;
-      background-color: #12021b; }
-  #info .section:nth-child(3) a.see-more:hover {
-    color: #33064A; }
-#info .section:nth-child(4) {
-  background-color: #33064A; }
-  #info .section:nth-child(4) .alt {
-    color: #F243CA; }
-  #info .section:nth-child(4) .btn {
-    color: #F243CA;
-    background-color: transparent;
-    border: 1px solid #F243CA; }
-    #info .section:nth-child(4) .btn:hover {
+  #info .section:nth-child(2) {
+    background-color: #791b9e; }
+    #info .section:nth-child(2) .alt {
+      color: #F243CA; }
+    #info .section:nth-child(2) .btn {
+      color: #F243CA;
+      background-color: transparent;
+      border: 1px solid #F243CA; }
+      #info .section:nth-child(2) .btn:hover {
+        color: #791b9e;
+        background-color: #F243CA; }
+      #info .section:nth-child(2) .btn:active {
+        color: #791b9e;
+        background-color: #ef13bd; }
+    #info .section:nth-child(2) a.see-more:hover {
+      color: #F243CA; }
+  #info .section:nth-child(3) {
+    background-color: #A62EAE; }
+    #info .section:nth-child(3) .alt {
+      color: #33064A; }
+    #info .section:nth-child(3) .btn {
       color: #33064A;
-      background-color: #F243CA; }
-    #info .section:nth-child(4) .btn:active {
-      color: #33064A;
-      background-color: #ef13bd; }
-  #info .section:nth-child(4) a.see-more:hover {
-    color: #F243CA; }
-#info #header {
-  background-image: url(../img/info_header.jpg); }
-#info .see-more.whatsapp {
-  font-size: 1.4em; }
-#info ul.icons {
-  -webkit-padding-start: 0; }
-  #info ul.icons img {
-    height: 2.5rem;
-    opacity: 1; }
-    #info ul.icons img:hover {
-      -ms-transform: translateX(0) translateY(-2px);
-      -webkit-transform: translate(0, -2px);
-      transform: translate(0, -2px); }
+      background-color: transparent;
+      border: 1px solid #33064A; }
+      #info .section:nth-child(3) .btn:hover {
+        color: #A62EAE;
+        background-color: #33064A; }
+      #info .section:nth-child(3) .btn:active {
+        color: #A62EAE;
+        background-color: #12021b; }
+    #info .section:nth-child(3) a.see-more:hover {
+      color: #33064A; }
+  #info .section:nth-child(4) {
+    background-color: #33064A; }
+    #info .section:nth-child(4) .alt {
+      color: #F243CA; }
+    #info .section:nth-child(4) .btn {
+      color: #F243CA;
+      background-color: transparent;
+      border: 1px solid #F243CA; }
+      #info .section:nth-child(4) .btn:hover {
+        color: #33064A;
+        background-color: #F243CA; }
+      #info .section:nth-child(4) .btn:active {
+        color: #33064A;
+        background-color: #ef13bd; }
+    #info .section:nth-child(4) a.see-more:hover {
+      color: #F243CA; }
+  #info #header {
+    background-image: url(../img/info_header.jpg); }
+  #info .see-more.whatsapp {
+    font-size: 1.4em; }
+  #info ul.icons {
+    -webkit-padding-start: 0; }
+    #info ul.icons img {
+      height: 2.5rem;
+      opacity: 1; }
+      #info ul.icons img:hover {
+        -ms-transform: translateX(0) translateY(-2px);
+        -webkit-transform: translate(0, -2px);
+        transform: translate(0, -2px); }
+  #info .accordion h3 {
+    margin-top: 4rem; }
+  #info .card {
+    background-color: transparent;
+    border: 0;
+    margin-bottom: 2rem; }
+    #info .card .card-body {
+      padding: 1.5rem 0; }
+  #info .card-header {
+    padding: 0;
+    background-color: transparent;
+    border-bottom: 0; }
+    #info .card-header h5 a:hover {
+      color: #fff;
+      text-decoration: none; }
 
 /*/////////////////////////////////////
 	Section Slanting

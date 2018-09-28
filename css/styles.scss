@@ -25,7 +25,7 @@
 $x-orange-highlight: #ffd12b;
 $x-orange-light: #F78825;
 $x-orange-med: #F1521D; 
-$x-orange-dark: #631406;
+$x-orange-dark: #900025;
 
 $x-blue-highlight: #80EDF4;
 $x-blue-light: #52BCF7;
@@ -96,7 +96,7 @@ $info-em: $x-purple-highlight;
 @mixin page-colors($highlight, $light, $medium, $dark) {
 
 	.navbar-bg {
-		background-color: $dark;
+		background-color: $medium;
 	}
 
 	#dfd-logo rect,
@@ -373,6 +373,10 @@ p {
 	opacity: 0.9;
 }
 
+#header {
+	background-attachment: fixed;
+}
+
 /*Homepage*/
 
 #homepage {
@@ -475,6 +479,10 @@ p {
 
 	.lineup-t1 {
 		font-size: 4.5em;
+
+		li {
+			display: block;
+		}
 	}
 
 	.lineup-t2 {
@@ -591,7 +599,7 @@ p {
 
 	ul.icons {
 		-webkit-padding-start: 0;
-	
+
 
 		img {
 			height: 2.5rem;
@@ -602,7 +610,44 @@ p {
 			}
 		}
 	}
+
+	/*Accordian Card Overides*/
+
+	.accordion {
+		h3 {
+			margin-top: 4rem;
+		}
+	}
+
+	.card {
+		background-color: transparent;
+		border: 0;
+		margin-bottom: 2rem;
+
+		.card-body {
+			padding: 1.5rem 0;
+		}
+	}
+
+	.card-header {
+		padding: 0;
+		background-color: transparent;
+		border-bottom: 0;
+
+		h5 {
+			a:hover {
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+
+		
+
+		
+	}
 }
+
+
 
 
 

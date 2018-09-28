@@ -19,3 +19,8 @@ $(window).scroll(function () {
 		$('.home-hide').hide();
 	}
 });
+
+// FAQ Accordian + & -
+$('.plus-minus').on(show.bs.collapse, function () {
+	$(this).html('-');
+})
