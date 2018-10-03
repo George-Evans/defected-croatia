@@ -129,8 +129,12 @@ p {
   padding: 1rem 2em;
   min-width: 80%;
   border-radius: 0;
-  display: block;
-  margin-bottom: 1.2rem; }
+  margin-bottom: 1.2rem;
+  margin-right: 0.6rem; }
+
+.section .btn > img {
+  height: 2rem;
+  opacity: 1; }
 
 .btn-primary:hover,
 .btn-primary:not(:disabled):not(.disabled).active,
