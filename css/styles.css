@@ -488,6 +488,8 @@ footer.homepage {
     height: 480px; }
   #booking .faninc .w-groups {
     height: 360px; }
+#booking #accommodation .col-12 {
+  margin-bottom: 2rem; }
 #booking .price {
   font-size: 1.5rem;
   margin-bottom: 0.3em; }
