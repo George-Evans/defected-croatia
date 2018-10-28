@@ -205,29 +205,30 @@
 					<h3 class="alt">Step 1:</h3>
 					<h2>TICKETS</h2>
 					<div class="chunk">
-						<div id="eventbrite-widget-container-50746058828"></div>
-						<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-
-						<script type="text/javascript">
-						    var exampleCallback = function() {
-						        console.log('Order complete!');
-						    };
-
-						    window.EBWidgets.createWidget({
-						        // Required
-						        widgetType: 'checkout',
-						        eventId: '50746058828',
-						        iframeContainerId: 'eventbrite-widget-container-50746058828',
-
-						        // Optional
-						        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-						        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-						    });
-						</script>
-					</div>
-					<div class="chunk">
 						<h3>Full Festival Day & Night Tickets</h3>
 						<p>Includes all 6 days of the festival and all Barbarella’s after parties. Excludes boat parties.</p>
+						<div class="faninc">
+							<div id="eventbrite-widget-container-50746058828"></div>
+							<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+							<script type="text/javascript">
+							    var exampleCallback = function() {
+							        console.log('Order complete!');
+							    };
+
+							    window.EBWidgets.createWidget({
+							        // Required
+							        widgetType: 'checkout',
+							        eventId: '50746058828',
+							        iframeContainerId: 'eventbrite-widget-container-50746058828',
+
+							        // Optional
+							        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+							        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+							    });
+							</script>
+						</div>
+					</div>
+					<div class="chunk">
 						<div class="faninc">
 							<iframe src="https://event.bookitbee.com/widget/event-tickets/18525?height=400&theme=minimal_white" style="width:1px;min-width:100%;border:0;" width="100%" allowtransparency="true" scrolling="no" class="w-tickets"></iframe>
 						</div>
@@ -248,8 +249,7 @@
 					</div>
 					<div class="chunk">
 						<h3>Ticket Partners</h3>
-						<p>In addition the booking forms above powered by FanInc. you can also purchase tickets through the festival through our official ticketing partners:</p>
-						<a href="https://www.eventbrite.com/e/defected-croatia-2019-tickets-50746058828" class="btn"><img src="img/eventbrite.svg"></a>
+						<p>In addition the booking forms above powered by Eventbrite and FanInc. you can also purchase tickets through the festival through our official ticketing partners:</p>
 						<a href="https://www.skiddle.com/festivals/defected-croatia/" class="btn"><img src="img/skiddle.svg"></a>
 						<a href="https://www.festicket.com/hosted/festivals/defected-croatia/2019/shop/?page_mode=hosted&referrer=defected" class="btn"><img src="img/festicket.svg"></a>
 					</div>
