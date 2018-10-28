@@ -476,6 +476,10 @@ footer.homepage {
     color: #80EDF4; }
 #booking #header {
   background-image: url(../img/booking_header.jpg); }
+#booking .book-with {
+  padding: 1rem 2rem;
+  margin-bottom: -2.5rem;
+  background-color: #07284F; }
 #booking .faninc {
   background-color: #fff;
   padding: 1rem;

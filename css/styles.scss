@@ -587,6 +587,12 @@ body input:checked + label span:last-child {
 		background-image: url(../img/booking_header.jpg);
 	}
 
+	.book-with {
+		padding: 1rem 2rem;
+		margin-bottom: -2.5rem;
+		background-color: $book-3;
+	}
+
 	.faninc {
 		background-color: #fff;
 		padding: 1rem;
