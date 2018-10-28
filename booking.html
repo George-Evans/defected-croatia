@@ -205,6 +205,27 @@
 					<h3 class="alt">Step 1:</h3>
 					<h2>TICKETS</h2>
 					<div class="chunk">
+						<div id="eventbrite-widget-container-50746058828"></div>
+						<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+						<script type="text/javascript">
+						    var exampleCallback = function() {
+						        console.log('Order complete!');
+						    };
+
+						    window.EBWidgets.createWidget({
+						        // Required
+						        widgetType: 'checkout',
+						        eventId: '50746058828',
+						        iframeContainerId: 'eventbrite-widget-container-50746058828',
+
+						        // Optional
+						        iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+						        onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+						    });
+						</script>
+					</div>
+					<div class="chunk">
 						<h3>Full Festival Day & Night Tickets</h3>
 						<p>Includes all 6 days of the festival and all Barbarella’s after parties. Excludes boat parties.</p>
 						<div class="faninc">
@@ -322,9 +343,8 @@
 					</div>
 					<div class="chunk">
 						<h3>Tisno Accommodation</h3>
-						<p>We’ve linked up with several travel services to offer bespoke packages to take the hassle out of booking your trip. Tisno and its surrounding areas have an array of offsite accommodation ranging from budget apartments to luxurious villas for you and your entire crew. Choose from one of our office package partners, or contact Helena at The Garden Resort for more information regarding local accommodation.</p>
-						<a href="http://lovemusictravel.com/portfolio/defected-croatia/" class="btn"><img src="img/lmt.svg"></a>
-						<a href="https://www.abcroatia.com/packages/defected-custom-package/" class="btn"><img src="img/abcroatia.svg"></a><br>
+						<p>We’ve linked up with Love Music Travel to offer bespoke packages to take the hassle out of booking your trip. Tisno and its surrounding areas have an array of offsite accommodation ranging from budget apartments to luxurious villas for you and your entire crew. Choose from one of our office package partners, or contact Helena at The Garden Resort for more information regarding local accommodation.</p>
+						<a href="http://lovemusictravel.com/portfolio/defected-croatia/" class="btn"><img src="img/lmt.svg"></a><br>
 						<a href="mailto:enquiries@thegarden.hr" class="see-more">Helena: Off-Site Enquiries</a>
 					</div>
 
