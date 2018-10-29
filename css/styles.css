@@ -479,7 +479,9 @@ footer.homepage {
 #booking .book-with {
   padding: 1rem 2rem;
   margin-bottom: -2.5rem;
-  background-color: #07284F; }
+  background-color: #07284F;
+  margin-left: -30px;
+  margin-right: -30px; }
 #booking .faninc {
   background-color: #fff;
   padding: 1rem;
@@ -797,6 +799,9 @@ footer {
     font-size: 1.6em; }
 
   /*Faninc Widgets*/
+  #booking .book-with {
+    margin-left: 0;
+    margin-right: 0; }
   #booking .faninc {
     padding: 2rem;
     margin-left: 0;

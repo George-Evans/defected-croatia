@@ -591,6 +591,8 @@ body input:checked + label span:last-child {
 		padding: 1rem 2rem;
 		margin-bottom: -2.5rem;
 		background-color: $book-3;
+		margin-left: -30px;
+		margin-right: -30px;
 	}
 
 	.faninc {
@@ -931,6 +933,12 @@ footer {
 	/*Faninc Widgets*/
 
 	#booking {
+
+		.book-with {
+			margin-left: 0;
+			margin-right: 0;
+		}
+
 		.faninc {
 			padding: 2rem;
 			margin-left: 0;
