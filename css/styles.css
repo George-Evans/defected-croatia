@@ -389,11 +389,11 @@ footer.homepage {
   display: inline-block;
   padding-right: 0.3em; }
 #lineup .lineup-t1 {
-  font-size: 2.7em; }
+  font-size: 2.8em; }
   #lineup .lineup-t1 li {
     display: block; }
 #lineup .lineup-t2 {
-  font-size: 1.7em; }
+  font-size: 2em; }
 #lineup .lineup-t3 {
   font-size: 1.6em; }
 
@@ -796,7 +796,7 @@ footer {
   #lineup .lineup-t2 {
     font-size: 3.2em; }
   #lineup .lineup-t3 {
-    font-size: 1.6em; }
+    font-size: 2.0em; }
 
   /*Faninc Widgets*/
   #booking .book-with {
